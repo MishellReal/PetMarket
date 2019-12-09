@@ -10,71 +10,86 @@
         android:id="@+id/buttonChoose3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/holo_red_light"
         android:hint="@string/Choose"
         android:text="@string/Choose"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView43" />
-
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:text="$16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox15" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <CheckBox
         android:id="@+id/checkBox14"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Pedicure confort"
-        app:layout_constraintTop_toBottomOf="@+id/textView41"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Servicio Completo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
     <TextView
         android:id="@+id/textView41"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
         android:layout_marginTop="10dp"
-        android:text="$19"
+        android:text="Corte de Pelo - $9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
 
     <TextView
-        android:id="@+id/textView42"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:text="$13"
+        android:id="@+id/textView"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Corte de Pelo + Accesorios - $13"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox14" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Corte de Pelo + Accesorios + Pedicura - $16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox15" />
+
     <CheckBox
         android:id="@+id/checkBox15"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Pedicure premium"
+        android:layout_width="300dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="Servicio Premium"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
         android:id="@+id/checkBox13"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_width="305dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="Pedicure basic"
-        app:layout_constraintTop_toBottomOf="@+id/textView39"
-        tools:layout_editor_absoluteX="0dp" />
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Servicio Básico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -91,7 +106,7 @@
         android:layout_width="200dp"
         android:layout_height="42dp"
         android:layout_marginTop="15dp"
-        android:text="Pedicure."
+        android:text="Peluquería"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +118,7 @@
         android:layout_width="342dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:text="Nuestro Servicio de Pedicure ofrece  a tu perro nuestros mejores atenciones y cuidados"
+        android:text="Nuestro servicio de salón de belleza ofrece a su perro nuestro mejor cuidado y atención."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
