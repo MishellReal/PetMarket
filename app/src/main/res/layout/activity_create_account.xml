@@ -87,15 +87,15 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="122dp"
+        android:layout_height="47dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:background="@android:color/holo_red_light"
-        android:text="@string/SingIn"
+        android:text="@string/create_Account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />
