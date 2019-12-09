@@ -13,7 +13,7 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
 
         val createAccountTable = ("CREATE TABLE " + TABLE_ACCOUNT + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
-                + KEY_EMAIL + " TEXT" + KEY_PW + "TEXT"+ ")")
+                + KEY_EMAIL + " TEXT," + KEY_PW + "TEXT"+ ")")
 
 
         db.execSQL(createAccountTable)
