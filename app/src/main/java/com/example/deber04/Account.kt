@@ -1,6 +1,6 @@
 package com.example.deber04
 
-class Contact {
+class Account {
 
     var id: Int = 0
     var name: String? = null
