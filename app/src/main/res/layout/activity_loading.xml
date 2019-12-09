@@ -10,68 +10,73 @@
         android:id="@+id/buttonChoose2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="52dp"
         android:background="@android:color/holo_red_light"
         android:hint="@string/Choose"
         android:text="@string/Choose"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:text="$25"
+        android:layout_width="188dp"
+        android:layout_height="39dp"
+        android:text="Hospedaje + Comida + Aseo - $25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+        tools:layout_editor_absoluteY="542dp" />
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:text="$20"
+        android:layout_width="188dp"
+        android:layout_height="17dp"
+        android:text="Hospedaje + Comida - $20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox11" />
+        tools:layout_editor_absoluteY="471dp" />
 
     <TextView
         android:id="@+id/textView34"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
+        android:layout_width="197dp"
+        android:layout_height="20dp"
         android:layout_marginTop="10dp"
-        android:text="$15"
+        android:text="Hospedaje - $15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
 
     <CheckBox
-        android:id="@+id/checkBox12"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/checkBox10"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
-        android:text="Hospedaje suite y comida premium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+        android:text="Cuidado Básico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <CheckBox
         android:id="@+id/checkBox11"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Hospedaje y comida confort"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:text="Cuidado Completo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <CheckBox
-        android:id="@+id/checkBox10"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Hospedaje y comida basic"
+        android:id="@+id/checkBox12"
+        android:layout_width="293dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="152dp"
+        android:text="Cuidado Premium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
@@ -90,7 +95,7 @@
         android:layout_width="187dp"
         android:layout_height="47dp"
         android:layout_marginTop="25dp"
-        android:text="Loading."
+        android:text="Cuidado"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,7 +107,7 @@
         android:layout_width="372dp"
         android:layout_height="68dp"
         android:layout_marginTop="10dp"
-        android:text="Nuestro Servicio de Hospedaje ofrece  a tu perro nuestros mejores cuidados y atenciones a demás de nuestra exelente comida"
+        android:text="Nuestro servicio de cuidado ofrece a su perro nuestro mejor cuidado y atención a los demás de nuestra excelente comida."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
