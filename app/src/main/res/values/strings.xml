@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Deber04</string>
+    <string name="sistema_de_contactos">Sistema de Contactos</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="actualizar">Update</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="consultar">Consultar por id</string>
+    <string name="ingresarContacto">Ingresar Contacto</string>
+    <string name="ingresarNombre">nombre</string>
+    <string name="ingresarTelefono">telefono</string>
+    <string name="BotonAceptar">Aceptar</string>
+    <string name="BotonCancelar">Cancelar</string>
+    <string name="IngresarId">IngresarID</string>
+    <string name="BuscardID">Buscar</string>
+    <string name="ResultadoNombre">nombre</string>
+    <string name="BotonEliminar">Eliminar</string>
+    <string name="BotonActualizar">Update</string>
+    <string name="Todos_los_contactos">All Contacts</string>
+    <string name="ResultadoTelefono">telefono</string>
+    <string name="Login">Login</string>
+    <string name="app_namee">MkPetPro</string>
+    <string name="create_Account">Create Account</string>
+    <string name="UserName">Username</string>
+    <string name="Password">Password</string>
+    <string name="LoginApp">Login</string>
+    <string name="SingIn">Sing in</string>
+    <string name="Name">name</string>
+    <string name="email">email</string>
+    <string name="repeatpassword">repeat password</string>
+    <string name="ButtonTake"></string>
+    <string name="ButtonBathe"></string>
+    <string name="ButtonLoading"></string>
+    <string name="ButtonPedicure"></string>
+    <string name="ButtonProfile"></string>
+    <string name="ButtonHome"></string>
+    <string name="Choose">Choose</string>
+    <string name="pay">Make Payment</string>
+
+
+</resources>

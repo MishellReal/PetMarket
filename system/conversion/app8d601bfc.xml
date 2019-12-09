@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-native-run-configurations" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="remove-java-aware-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\..\Laboratorio2.iml" timestamp="1572375392630" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\.idea\codeStyles\Project.xml" timestamp="1572375290536" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\.idea\gradle.xml" timestamp="1572375367180" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\.idea\misc.xml" timestamp="1572375392657" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\.idea\modules.xml" timestamp="1572375392680" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\.idea\runConfigurations.xml" timestamp="1572375290554" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\.idea\workspace.xml" timestamp="1572375392644" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\app\app.iml" timestamp="1572375392610" />
+  </project-files>
+</conversion>
+

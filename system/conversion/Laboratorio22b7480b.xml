@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-native-run-configurations" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="remove-java-aware-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="C:\Laboratorio2\.idea\codeStyles\Project.xml" timestamp="1574869530102" />
+    <file path="C:\Laboratorio2\.idea\codeStyles\codeStyleConfig.xml" timestamp="1574869530143" />
+    <file path="C:\Laboratorio2\.idea\gradle.xml" timestamp="1574869374287" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_annotation_annotation_1_0_2_jar.xml" timestamp="1574869530191" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" timestamp="1574869530208" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" timestamp="1574869530224" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" timestamp="1574869530243" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" timestamp="1574869530260" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_collection_collection_1_0_0_jar.xml" timestamp="1574869530278" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" timestamp="1574869530296" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" timestamp="1574869530312" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" timestamp="1574869530331" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_core_core_1_0_2_aar.xml" timestamp="1574869530350" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_core_core_ktx_1_0_2_aar.xml" timestamp="1574869530367" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" timestamp="1574869530387" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_customview_customview_1_0_0_aar.xml" timestamp="1574869530405" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" timestamp="1574869530422" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" timestamp="1574869530437" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_fragment_fragment_1_0_0_aar.xml" timestamp="1574869530458" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" timestamp="1574869530474" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" timestamp="1574869530489" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" timestamp="1574869530507" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" timestamp="1574869530525" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" timestamp="1574869530543" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" timestamp="1574869530565" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" timestamp="1574869530583" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" timestamp="1574869530602" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_loader_loader_1_0_0_aar.xml" timestamp="1574869530618" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" timestamp="1574869530640" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_print_print_1_0_0_aar.xml" timestamp="1574869530657" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" timestamp="1574869530677" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" timestamp="1574869530697" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_test_espresso_espresso_core_3_1_1_aar.xml" timestamp="1574869530714" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_test_espresso_espresso_idling_resource_3_1_1_aar.xml" timestamp="1574869530733" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_test_monitor_1_1_1_aar.xml" timestamp="1574869530749" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_test_runner_1_1_1_aar.xml" timestamp="1574869530768" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" timestamp="1574869530788" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" timestamp="1574869530803" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" timestamp="1574869530820" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" timestamp="1574869530839" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" timestamp="1574869530856" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__com_squareup_javawriter_2_1_1_jar.xml" timestamp="1574869530882" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__javax_inject_javax_inject_1_jar.xml" timestamp="1574869530899" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__junit_junit_4_12_jar.xml" timestamp="1574869530917" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" timestamp="1574869530933" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" timestamp="1574869530952" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" timestamp="1574869530968" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" timestamp="1574869530984" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_jetbrains_annotations_13_0_jar.xml" timestamp="1574869531000" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_41_jar.xml" timestamp="1574869531016" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_41_jar.xml" timestamp="1574869531037" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_41_jar.xml" timestamp="1574869531054" />
+    <file path="C:\Laboratorio2\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_41_jar.xml" timestamp="1574869531072" />
+    <file path="C:\Laboratorio2\.idea\misc.xml" timestamp="1574869530054" />
+    <file path="C:\Laboratorio2\.idea\modules.xml" timestamp="1574869530069" />
+    <file path="C:\Laboratorio2\.idea\runConfigurations.xml" timestamp="1574869308544" />
+    <file path="C:\Laboratorio2\.idea\workspace.xml" timestamp="1574873156127" />
+    <file path="C:\Laboratorio2\Laboratorio2.iml" timestamp="1574869529992" />
+    <file path="C:\Laboratorio2\app\app.iml" timestamp="1574873142333" />
+  </project-files>
+</conversion>
+

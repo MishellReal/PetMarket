@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-native-run-configurations" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="remove-java-aware-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\codeStyles\Project.xml" timestamp="1572463626573" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\codeStyles\codeStyleConfig.xml" timestamp="1572463626595" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\gradle.xml" timestamp="1572463577996" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_annotation_annotation_1_0_2_jar.xml" timestamp="1572463626631" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" timestamp="1572463626649" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" timestamp="1572463626664" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" timestamp="1572463626685" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" timestamp="1572463626702" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_collection_collection_1_0_0_jar.xml" timestamp="1572463626717" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" timestamp="1572463626735" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" timestamp="1572463626752" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" timestamp="1572463626769" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_core_core_1_0_2_aar.xml" timestamp="1572463626783" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_core_core_ktx_1_0_2_aar.xml" timestamp="1572463626798" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" timestamp="1572463626811" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_customview_customview_1_0_0_aar.xml" timestamp="1572463626829" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" timestamp="1572463626854" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" timestamp="1572463626871" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_fragment_fragment_1_0_0_aar.xml" timestamp="1572463626886" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" timestamp="1572463626898" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" timestamp="1572463626912" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" timestamp="1572463626924" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" timestamp="1572463626936" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" timestamp="1572463626949" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" timestamp="1572463626966" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" timestamp="1572463626987" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" timestamp="1572463627004" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_loader_loader_1_0_0_aar.xml" timestamp="1572463627020" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" timestamp="1572463627067" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_print_print_1_0_0_aar.xml" timestamp="1572463627097" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" timestamp="1572463627137" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" timestamp="1572463627169" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_test_core_1_1_0_aar.xml" timestamp="1572463627192" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_test_espresso_espresso_core_3_1_1_aar.xml" timestamp="1572463627209" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_test_espresso_espresso_idling_resource_3_1_1_aar.xml" timestamp="1572463627284" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_test_ext_junit_1_1_0_aar.xml" timestamp="1572463627301" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_test_monitor_1_1_1_aar.xml" timestamp="1572463627316" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_test_runner_1_1_1_aar.xml" timestamp="1572463627330" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" timestamp="1572463627359" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" timestamp="1572463627373" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_versionedparcelable_versionedparcelable_1_0_0_aar.xml" timestamp="1572463627386" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" timestamp="1572463627396" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" timestamp="1572463627418" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__com_squareup_javawriter_2_1_1_jar.xml" timestamp="1572463627434" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__javax_inject_javax_inject_1_jar.xml" timestamp="1572463627447" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__junit_junit_4_12_jar.xml" timestamp="1572463627458" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" timestamp="1572463627471" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" timestamp="1572463627491" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" timestamp="1572463627511" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" timestamp="1572463627534" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_jetbrains_annotations_13_0_jar.xml" timestamp="1572463627552" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_50_jar.xml" timestamp="1572463627652" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_50_jar.xml" timestamp="1572463627741" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_50_jar.xml" timestamp="1572463627796" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\libraries\Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_50_jar.xml" timestamp="1572463627843" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\misc.xml" timestamp="1572463626541" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\modules.xml" timestamp="1572463626558" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\runConfigurations.xml" timestamp="1572463564647" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\.idea\workspace.xml" timestamp="1572463630245" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\Laboratorio3.iml" timestamp="1572463626489" />
+    <file path="C:\Users\HP ENVY\Desktop\Laboratorio2\Laboratorio3\app\app.iml" timestamp="1572463626512" />
+  </project-files>
+</conversion>
+

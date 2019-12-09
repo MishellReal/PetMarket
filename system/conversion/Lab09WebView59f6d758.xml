@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-native-run-configurations" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+    <converter id="remove-java-aware-configurations" />
+  </applied-converters>
+  <project-files>
+    <file path="C:\Users\HP ENVY\Documents\Escuela Politecnica Nacional\ESCUELA POLITECNICA NACIONAL\Lab09WebView\.idea\codeStyles\Project.xml" timestamp="1574886602460" />
+    <file path="C:\Users\HP ENVY\Documents\Escuela Politecnica Nacional\ESCUELA POLITECNICA NACIONAL\Lab09WebView\.idea\gradle.xml" timestamp="1574886678034" />
+    <file path="C:\Users\HP ENVY\Documents\Escuela Politecnica Nacional\ESCUELA POLITECNICA NACIONAL\Lab09WebView\.idea\misc.xml" timestamp="1574886602393" />
+    <file path="C:\Users\HP ENVY\Documents\Escuela Politecnica Nacional\ESCUELA POLITECNICA NACIONAL\Lab09WebView\.idea\modules.xml" timestamp="1574886602414" />
+    <file path="C:\Users\HP ENVY\Documents\Escuela Politecnica Nacional\ESCUELA POLITECNICA NACIONAL\Lab09WebView\.idea\runConfigurations.xml" timestamp="1574886602488" />
+    <file path="C:\Users\HP ENVY\Documents\Escuela Politecnica Nacional\ESCUELA POLITECNICA NACIONAL\Lab09WebView\.idea\workspace.xml" timestamp="1574886955438" />
+    <file path="C:\Users\HP ENVY\Documents\Escuela Politecnica Nacional\ESCUELA POLITECNICA NACIONAL\Lab09WebView\Lab09WebView.iml" timestamp="1574886602338" />
+  </project-files>
+</conversion>
+

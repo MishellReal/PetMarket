@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pedicure">
+
+    <Button
+        android:id="@+id/buttonChoose3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_red_light"
+        android:hint="@string/Choose"
+        android:text="@string/Choose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="27dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="$16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox15" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pedicure confort"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="27dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="$19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="27dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:text="$13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox14" />
+
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pedicure premium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pedicure basic"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="255dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/pedicure" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="15dp"
+        android:text="Pedicure."
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="342dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Nuestro Servicio de Pedicure ofrece  a tu perro nuestros mejores atenciones y cuidados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

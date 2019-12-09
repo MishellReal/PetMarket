@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Services">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Services"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTake"
+        android:layout_width="176dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/take"
+        android:hint="@string/ButtonTake"
+        app:layout_constraintEnd_toStartOf="@+id/buttonBathe"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/buttonBathe"
+        android:layout_width="176dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/bathe1"
+        android:hint="@string/ButtonBathe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonTake"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/buttonLoading"
+        android:layout_width="179dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/loading"
+        android:hint="@string/ButtonLoading"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPedicure"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTake" />
+
+    <Button
+        android:id="@+id/buttonPedicure"
+        android:layout_width="161dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/pedicure"
+        android:hint="@string/ButtonPedicure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonLoading"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBathe" />
+
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="61dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/profile"
+        android:hint="@string/ButtonProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
