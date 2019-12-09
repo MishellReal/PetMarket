@@ -12,63 +12,64 @@ class CreateAccount : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
 
-        fun Ingresar(view: View){
-            var db : DatabaseHandler= DatabaseHandler(this)
-            var nombre : EditText = findViewById(R.id.editTextNombreRegistro)
-            var email : EditText = findViewById(R.id.editTextEmailRegistro)
-            var pw : EditText = findViewById(R.id.editTextEmailRegistro)
 
-            if(nombre.text.toString().isEmpty()){
+    }
+    fun Ingresar(view: View){
+        var db : DatabaseHandler= DatabaseHandler(this)
+        var nombre : EditText = findViewById(R.id.editTextNombreRegistro)
+        var email : EditText = findViewById(R.id.editTextEmailRegistro)
+        var pw : EditText = findViewById(R.id.editTextEmailRegistro)
 
-                nombre.setError("Ingresar nombre ")
-                return
-            }
+        if(nombre.text.toString().isEmpty()){
 
-            if(email.text.toString().isEmpty()){
-                email.setError("Ingresar teléfono ")
-                return
-            }
-
-            if(pw.text.toString().isEmpty()){
-                pw.setError("Ingresar contraseña")
-                return
-            }
-
-            else{
-
-                db.addAccount(nombre.text.toString(), email.text.toString(), pw.text.toString())
-                var toast = Toast.makeText(applicationContext,"Registro Creado ${nombre.text.toString()}",
-                    Toast.LENGTH_LONG)
-                toast.show()
-                nombre.setText("")
-                nombre.setText("")
-
-            }
-
-
-
+            nombre.setError("Ingresar nombre ")
+            return
         }
 
-        /*
+        if(email.text.toString().isEmpty()){
+            email.setError("Ingresar teléfono ")
+            return
+        }
+
+        if(pw.text.toString().isEmpty()){
+            pw.setError("Ingresar contraseña")
+            return
+        }
+
         else{
 
-            db.addContact(nombre_contacto.text.toString(), numero_contacto.text.toString())
-            var toast = Toast.makeText(applicationContext,"Registro Creado ${nombre_contacto.text.toString()}",
+            db.addAccount(nombre.text.toString(), email.text.toString(), pw.text.toString())
+            var toast = Toast.makeText(applicationContext,"Registro Creado ${nombre.text.toString()}",
                 Toast.LENGTH_LONG)
             toast.show()
-            nombre_contacto.setText("")
-            numero_contacto.setText("")
+            nombre.setText("")
+            nombre.setText("")
 
         }
 
-    }
 
-    fun cancelar(view: View){
-
-        var regresar : Intent = Intent(this, MainActivity::class.java)
-        startActivity(regresar)
 
     }
+
+    /*
+    else{
+
+        db.addContact(nombre_contacto.text.toString(), numero_contacto.text.toString())
+        var toast = Toast.makeText(applicationContext,"Registro Creado ${nombre_contacto.text.toString()}",
+            Toast.LENGTH_LONG)
+        toast.show()
+        nombre_contacto.setText("")
+        numero_contacto.setText("")
+
+    }
+
+}
+
+fun cancelar(view: View){
+
+    var regresar : Intent = Intent(this, MainActivity::class.java)
+    startActivity(regresar)
+
+}
 }*/
-    }
 }
