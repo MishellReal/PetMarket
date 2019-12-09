@@ -11,7 +11,7 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        val button : Button = findViewById(R.id.buttonAceptar)
+        val button : Button = findViewById(R.id.buttonAceptarRegistro)
         button.setOnClickListener {
             var prIntent : Intent = Intent(this,Profile::class.java)
             startActivity(prIntent)
