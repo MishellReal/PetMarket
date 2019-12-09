@@ -49,7 +49,7 @@ class CreateAccount : AppCompatActivity() {
 
         }
 
-        /*
+        
         else{
 
             db.addContact(nombre_contacto.text.toString(), numero_contacto.text.toString())
