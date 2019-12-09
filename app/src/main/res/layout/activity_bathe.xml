@@ -10,71 +10,83 @@
         android:id="@+id/buttonChoose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="36dp"
         android:background="@android:color/holo_red_light"
         android:hint="@string/Choose"
         android:text="@string/Choose"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <TextView
         android:id="@+id/textView31"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
+        android:layout_width="274dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="$25"
+        android:text="Shampoo + Acondicionador + Arreglo a tigera de patas + Peinado - $25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox9" />
 
     <TextView
         android:id="@+id/textView30"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
         android:layout_marginTop="10dp"
-        android:text="$18"
+        android:text="Shampoo + Acondicionador + Arreglo a tigera de patas - $18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="27dp"
-        android:layout_height="0dp"
+        android:layout_width="281dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="$12"
+        android:text="Shampoo + Acondicionador - $12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
 
     <CheckBox
         android:id="@+id/checkBox8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="326dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="shampoo y acondicionador"
+        android:text="Baño Completo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <CheckBox
         android:id="@+id/checkBox9"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="326dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:text="shampoo + acondicionador + desparacitante"
+        android:text="Baño Premium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <CheckBox
         android:id="@+id/checkBox7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="shampoo"
+        android:layout_width="365dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Baño Básico"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
@@ -103,7 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Bathe."
+        android:text="Baño"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
