@@ -38,7 +38,7 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
 
     }
 
-    fun getAccount(id: Int): Account {
+    fun getAccount(id: Int): com.example.deber04.Account {
         var cuenta = Account()
         val db = this.writableDatabase
         val cursor = db.query(
@@ -49,14 +49,15 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
         cursor?.moveToFirst()
         cuenta.id = (Integer.parseInt(cursor.getString(0)))
         cuenta.name = cursor.getString(1)
-        cuenta.phone_number = cursor.getString(2)
+        cuenta.email = cursor.getString(2)
+        cuenta.pw = cursor.getString(3)
         return cuenta
 
         // return null
     }
 
-    fun getAllContacts(): List<com.example.deber04.Account> {
-        val contactList = ArrayList<com.example.deber04.Account>()
+    fun getAllAccounts(): List<com.example.deber04.Account> {
+        val accountList = ArrayList<com.example.deber04.Account>()
 
         val sql_select = "SELECT * FROM $TABLE_ACCOUNT"
 
@@ -68,14 +69,15 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
                 val contact = Account()
                 contact.id = Integer.parseInt(cursor.getString(0))
                 contact.name = cursor.getString(1)
-                contact.phone_number = cursor.getString(2)
-                contactList.add(contact)
+                contact.email = cursor.getString(2)
+                contact.pw = cursor.getString(2)
+                accountList.add(contact)
             }
         }
-        return contactList
+        return accountList
     }
 
-    fun updateContact(account: com.example.deber04.Account): Int {
+    /*fun updateContact(account: com.example.deber04.Account): Int {
         val db = this.writableDatabase
 
         val values = ContentValues().apply {
@@ -87,17 +89,17 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
             TABLE_ACCOUNT, values, "$KEY_ID=?",
             arrayOf(account.id.toString())
         )
-    }
+    }*/
 
 
-    fun deleteContact(account: com.example.deber04.Account) {
+    /*fun deleteContact(account: com.example.deber04.Account) {
         val db = this.writableDatabase
         db.delete(
             TABLE_ACCOUNT, "$KEY_ID =?",
             arrayOf(account.id.toString())
         )
         db.close()
-    }
+    }*/
 
 
     companion object {
