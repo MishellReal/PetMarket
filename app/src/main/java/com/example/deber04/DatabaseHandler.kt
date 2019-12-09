@@ -13,7 +13,7 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
 
         val createAccountTable = ("CREATE TABLE " + TABLE_ACCOUNT + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
-                + KEY_EMAIL + " TEXT" + KEY_PW + "TEXT"+ ")")
+                + KEY_EMAIL + " TEXT," + KEY_PW + "TEXT"+ ")")
 
 
         db.execSQL(createAccountTable)
@@ -70,7 +70,7 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
                 contact.id = Integer.parseInt(cursor.getString(0))
                 contact.name = cursor.getString(1)
                 contact.email = cursor.getString(2)
-                contact.pw = cursor.getString(2)
+                contact.pw = cursor.getString(3)
                 accountList.add(contact)
             }
         }
