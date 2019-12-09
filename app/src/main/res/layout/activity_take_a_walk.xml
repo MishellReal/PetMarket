@@ -146,6 +146,7 @@
         android:background="@android:color/holo_red_light"
         android:hint="@string/Choose"
         android:text="@string/Choose"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

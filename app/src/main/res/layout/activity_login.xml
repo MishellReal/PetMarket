@@ -99,6 +99,7 @@
         android:background="@android:color/holo_red_light"
         android:hint="@string/LoginApp"
         android:text="@string/LoginApp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
