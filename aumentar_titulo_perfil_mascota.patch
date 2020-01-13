@@ -1,0 +1,73 @@
+Index: app/src/main/java/com/example/deber04/serviciosAgregados.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/deber04/serviciosAgregados.kt	(date 1578941300832)
++++ app/src/main/java/com/example/deber04/serviciosAgregados.kt	(date 1578941300832)
+@@ -0,0 +1,12 @@
++package com.example.deber04
++
++import androidx.appcompat.app.AppCompatActivity
++import android.os.Bundle
++
++class serviciosAgregados : AppCompatActivity() {
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        setContentView(R.layout.activity_servicios_agregados)
++    }
++}
+Index: app/src/main/res/layout/activity_servicios_agregados.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_servicios_agregados.xml	(date 1578941306656)
++++ app/src/main/res/layout/activity_servicios_agregados.xml	(date 1578941306656)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".serviciosAgregados">
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(date 1578940982000)
++++ app/src/main/AndroidManifest.xml	(date 1578941306603)
+@@ -9,7 +9,8 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/AppTheme">
+-        <activity android:name=".Pedicure"></activity>
++        <activity android:name=".serviciosAgregados"></activity>
++        <activity android:name=".Pedicure" />
+         <activity android:name=".Loading" />
+         <activity android:name=".Bathe" />
+         <activity android:name=".Buy" />
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(date 1578940982000)
++++ app/build.gradle	(date 1578941301261)
+@@ -15,8 +15,8 @@
+         versionCode 1
+         versionName "1.0"
+         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+-            //other configs
+-            multiDexEnabled true //add this line
++        //other configs
++        multiDexEnabled true //add this line
+ 
+     }
+     buildTypes {
