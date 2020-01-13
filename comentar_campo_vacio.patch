@@ -1,0 +1,67 @@
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(date 1576504112000)
++++ build.gradle	(date 1578930596684)
+@@ -8,8 +8,9 @@
+         
+     }
+     dependencies {
+-        classpath 'com.android.tools.build:gradle:3.5.2'
++        classpath 'com.android.tools.build:gradle:3.5.3'
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
++        classpath 'com.google.gms:google-services:4.2.0'
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
+     }
+Index: app/src/main/java/com/example/deber04/CreateAccount.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/deber04/CreateAccount.kt	(date 1576504112000)
++++ app/src/main/java/com/example/deber04/CreateAccount.kt	(date 1578930344493)
+@@ -31,7 +31,7 @@
+             return
+         }
+ 
+-        if(pw.text.toString().isEmpty()){
++       /* if(pw.text.toString().isEmpty()){
+             pw.setError("Ingresar contraseña")
+             return
+         }
+@@ -45,7 +45,7 @@
+             nombre.setText("")
+             nombre.setText("")
+ 
+-        }
++        }*/
+ 
+ 
+ 
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(date 1576504112000)
++++ app/build.gradle	(date 1576512353876)
+@@ -3,6 +3,7 @@
+ apply plugin: 'kotlin-android'
+ 
+ apply plugin: 'kotlin-android-extensions'
++apply plugin: 'com.google.gms.google-services'
+ 
+ android {
+     compileSdkVersion 29
+@@ -29,6 +30,8 @@
+     implementation 'androidx.appcompat:appcompat:1.0.2'
+     implementation 'androidx.core:core-ktx:1.0.2'
+     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
++    implementation 'com.google.firebase:firebase-database:16.0.4'
++    implementation 'com.google.firebase:firebase-firestore:17.1.2'
+     testImplementation 'junit:junit:4.12'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
