@@ -31,11 +31,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ConsultarID" />
-        <activity android:name=".ConsultarTodoActivity" />
-        <activity android:name=".EliminarActivity" />
-        <activity android:name=".ModificarActivity" />
-        <activity android:name=".IngresarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
