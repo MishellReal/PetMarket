@@ -18,7 +18,8 @@
         android:drawableLeft="@drawable/pssword"
         android:ems="10"
         android:hint="@string/Password"
-        android:inputType="numberPassword"
+        android:inputType="text"
+        android:password="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
