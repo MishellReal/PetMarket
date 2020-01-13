@@ -31,7 +31,7 @@ class CreateAccount : AppCompatActivity() {
             return
         }
 
-        if(pw.text.toString().isEmpty()){
+       /* if(pw.text.toString().isEmpty()){
             pw.setError("Ingresar contraseña")
             return
         }
@@ -45,7 +45,7 @@ class CreateAccount : AppCompatActivity() {
             nombre.setText("")
             nombre.setText("")
 
-        }
+        }*/
 
 
 
