@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="Servicios"
@@ -23,6 +23,7 @@
         android:textStyle="italic"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,9 +31,10 @@
         android:id="@+id/buttonTake"
         android:layout_width="176dp"
         android:layout_height="160dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="72dp"
         android:background="@mipmap/take"
         android:hint="@string/ButtonTake"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/buttonBathe"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +44,7 @@
         android:id="@+id/buttonBathe"
         android:layout_width="176dp"
         android:layout_height="160dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="72dp"
         android:background="@mipmap/bathe1"
         android:hint="@string/ButtonBathe"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,9 +54,9 @@
 
     <Button
         android:id="@+id/buttonLoading"
-        android:layout_width="179dp"
-        android:layout_height="182dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="162dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="84dp"
         android:background="@mipmap/loading"
         android:hint="@string/ButtonLoading"
         app:layout_constraintEnd_toStartOf="@+id/buttonPedicure"
@@ -64,9 +66,9 @@
 
     <Button
         android:id="@+id/buttonPedicure"
-        android:layout_width="161dp"
-        android:layout_height="176dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="159dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="84dp"
         android:background="@mipmap/pedicure"
         android:hint="@string/ButtonPedicure"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +84,61 @@
         android:hint="@string/ButtonProfile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLoading" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoading"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <TextView
+        android:id="@+id/textViewPasep"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="Paseos"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTake"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTake"
+        app:layout_constraintStart_toStartOf="@+id/buttonTake" />
+
+    <TextView
+        android:id="@+id/textViewBaño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Baños"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBathe"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBathe"
+        app:layout_constraintStart_toStartOf="@+id/buttonBathe" />
+
+    <TextView
+        android:id="@+id/textViewHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Hospedaje"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoading"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLoading"
+        app:layout_constraintStart_toStartOf="@+id/buttonLoading" />
+
+    <TextView
+        android:id="@+id/textViewSalon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Peluquería"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPedicure"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPedicure"
+        app:layout_constraintStart_toStartOf="@+id/buttonPedicure" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
