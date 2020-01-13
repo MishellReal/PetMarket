@@ -1,0 +1,22 @@
+Index: app/src/main/res/layout/activity_servicios_agregados.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_servicios_agregados.xml	(revision e46b4d482b11a4efb63df2d8f2329023de5c62d4)
++++ app/src/main/res/layout/activity_servicios_agregados.xml	(date 1578942495884)
+@@ -44,4 +44,13 @@
+         app:layout_constraintEnd_toEndOf="@+id/textViewservicio1"
+         app:layout_constraintStart_toStartOf="@+id/textViewservicio1"
+         tools:layout_editor_absoluteY="147dp" />
++
++    <TextView
++        android:id="@+id/textView10"
++        android:layout_width="0dp"
++        android:layout_height="wrap_content"
++        android:hint="Servicio 3"
++        app:layout_constraintEnd_toEndOf="@+id/textViewServicio2"
++        app:layout_constraintStart_toStartOf="@+id/textViewServicio2"
++        tools:layout_editor_absoluteY="187dp" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
