@@ -18,7 +18,7 @@
         android:drawableLeft="@drawable/pssword"
         android:ems="10"
         android:hint="@string/Password"
-        android:inputType="textPersonName"
+        android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
@@ -60,7 +60,7 @@
         android:drawableLeft="@drawable/ic_account_circle_black_24dp"
         android:ems="10"
         android:hint="@string/UserName"
-        android:inputType="textPassword"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
