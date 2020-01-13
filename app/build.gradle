@@ -15,8 +15,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-            //other configs
-            multiDexEnabled true //add this line
+        //other configs
+        multiDexEnabled true //add this line
 
     }
     buildTypes {
