@@ -14,7 +14,10 @@ class CreateAccount : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
 
-
+        val buttonCrearCuenta: Button = findViewById(R.id.buttonCrearCuenta)
+        buttonCrearCuenta.setOnClickListener {
+            val prIntent: Intent = Intent(this, CreateAccount::class.java)
+            startActivity(prIntent)
 
 
 

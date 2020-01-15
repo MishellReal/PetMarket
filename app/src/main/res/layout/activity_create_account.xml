@@ -7,67 +7,60 @@
     tools:context=".CreateAccount">
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="185dp"
+        android:id="@+id/textViewreg"
+        android:layout_width="wrap_content"
         android:layout_height="52dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:text="@string/create_Account"
+        android:text="REGISTRO"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNombreRegistro"
+        android:id="@+id/editTextNombreReg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:ems="10"
         android:hint="@string/Name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewreg" />
 
     <EditText
-        android:id="@+id/editTextEmailRegistro"
+        android:id="@+id/editTextEmailReg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNombreRegistro" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextApellidoReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextApellidoReg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextApellidoReg" />
 
     <EditText
-        android:id="@+id/editTextPwRegistro"
+        android:id="@+id/editTextPwReg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/Password"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmailRegistro" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhoneReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhoneReg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneReg" />
 
     <Button
         android:id="@+id/buttonAceptarRegistro"
@@ -75,27 +68,49 @@
         android:layout_height="47dp"
         android:background="@android:color/holo_red_light"
         android:onClick="Ingresar"
-        android:text="@string/create_Account"
+        android:text="Registrate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPwReg"
         app:layout_constraintVertical_bias="0.688" />
 
+    <EditText
+        android:id="@+id/editTextApellidoReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNombreReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombreReg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreReg" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="334dp"
-        android:layout_height="176dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/pets" />
+    <EditText
+        android:id="@+id/editTextPhoneReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmailReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailReg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailReg" />
+
+    <EditText
+        android:id="@+id/editTextConfirmaPwReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPwReg"
+        app:layout_constraintStart_toStartOf="@+id/editTextPwReg"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPwReg" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
