@@ -15,17 +15,14 @@ class CreateAccount : AppCompatActivity() {
         setContentView(R.layout.activity_create_account)
 
 
-        val buttonCrearCuenta : Button = findViewById(R.id.buttonCrearCuenta)
-        buttonCrearCuenta.setOnClickListener {
-            val prIntent : Intent = Intent(this,Register::class.java)
-            startActivity(prIntent)
+
 
 
         }
 
 
     }
-    fun Ingresar(view: View){
+    /*fun Ingresar(view: View){
         var db : DatabaseHandler= DatabaseHandler(this)
         var nombre : EditText = findViewById(R.id.editTextNombreRegistro)
         var email : EditText = findViewById(R.id.editTextEmailRegistro)
@@ -83,4 +80,4 @@ fun cancelar(view: View){
 
 }
 }*/
-}
+}*/
