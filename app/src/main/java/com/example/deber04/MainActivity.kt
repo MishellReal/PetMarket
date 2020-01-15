@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(prIntent)
         }
 
-        val buttonCreateAcount : Button = findViewById(R.id.button_createAccount)
+        val buttonCreateAcount : Button = findViewById(R.id.buttonCrearCuenta)
         buttonCreateAcount.setOnClickListener {
             val prIntent : Intent = Intent(this,CreateAccount::class.java)
             startActivity(prIntent)
