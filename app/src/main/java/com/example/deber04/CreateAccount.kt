@@ -14,17 +14,16 @@ class CreateAccount : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
 
-        val buttonCrearCuenta: Button = findViewById(R.id.buttonCrearCuenta)
-        buttonCrearCuenta.setOnClickListener {
-            val prIntent: Intent = Intent(this, CreateAccount::class.java)
+        val buttonAceptarRegistro: Button = findViewById(R.id.buttonAceptarRegistro)
+        buttonAceptarRegistro.setOnClickListener {
+            val prIntent: Intent = Intent(this, Register::class.java)
             startActivity(prIntent)
-
 
 
         }
 
 
-    }
+    }}
     /*fun Ingresar(view: View){
         var db : DatabaseHandler= DatabaseHandler(this)
         var nombre : EditText = findViewById(R.id.editTextNombreRegistro)
