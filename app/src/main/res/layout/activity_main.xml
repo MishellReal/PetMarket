@@ -12,8 +12,8 @@
         android:layout_height="31dp"
         android:text="Si no tiene cuenta, registrese"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="480dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="522dp" />
 
     <Button
         android:id="@+id/buttonLogin"
@@ -24,10 +24,11 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:hint="@string/Login"
-        android:text="@string/Login"
+        android:text="Iniciar Sesión"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="405dp" />
+        tools:layout_editor_absoluteY="441dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -51,16 +52,24 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonLogin"
-        tools:layout_editor_absoluteY="553dp" />
+        tools:layout_editor_absoluteY="579dp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="241dp"
         android:layout_height="157dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/perpro" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="244dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
