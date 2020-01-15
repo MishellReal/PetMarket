@@ -1,8 +1,10 @@
 package com.example.deber04
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
@@ -11,6 +13,15 @@ class CreateAccount : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
+
+
+        val buttonRegistro : Button = findViewById(R.id.buttonRegistro)
+        buttonRegistro.setOnClickListener {
+            val prIntent : Intent = Intent(this,Register::class.java)
+            startActivity(prIntent)
+
+
+        }
 
 
     }
@@ -31,7 +42,7 @@ class CreateAccount : AppCompatActivity() {
             return
         }
 
-        if(pw.text.toString().isEmpty()){
+       /* if(pw.text.toString().isEmpty()){
             pw.setError("Ingresar contraseña")
             return
         }
@@ -45,7 +56,7 @@ class CreateAccount : AppCompatActivity() {
             nombre.setText("")
             nombre.setText("")
 
-        }
+        }*/
 
 
 
