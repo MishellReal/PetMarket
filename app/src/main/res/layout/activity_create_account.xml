@@ -66,15 +66,14 @@
         android:id="@+id/buttonAceptarRegistro"
         android:layout_width="122dp"
         android:layout_height="47dp"
-        android:background="@android:color/holo_red_light"
-        android:onClick="Ingresar"
+        android:background="@android:color/holo_blue_light"
         android:text="Registrate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwReg"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmaPwReg"
+        app:layout_constraintVertical_bias="0.691" />
 
     <EditText
         android:id="@+id/editTextApellidoReg"
