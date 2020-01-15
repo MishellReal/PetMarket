@@ -5,34 +5,34 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-
-class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+class usuarioHandler (context: Context) : SQLiteOpenHelper(context, usuarioHandler.DATABASE_NAME, null, usuarioHandler.DATABASE_VERSION
+) {
 
     override fun onCreate(db: SQLiteDatabase) {
 
-        val createAccountTable = ("CREATE TABLE " + TABLE_ACCOUNT + "("
-                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT," + KEY_APELLIDO + " TEXT,"
-                + KEY_EMAIL + " TEXT," + KEY_PHONE + " TEXT," + KEY_PW + "TEXT,"+ ")")
+        val createUserTable = ("CREATE TABLE " + usuarioHandler.TABLE_USER + "("
+                + usuarioHandler.KEY_ID + " INTEGER PRIMARY KEY," + usuarioHandler.KEY_NAME + " TEXT," + usuarioHandler.KEY_APELLIDO + " TEXT,"
+                + usuarioHandler.KEY_EMAIL + " TEXT," + usuarioHandler.KEY_PHONE + " TEXT," + usuarioHandler.KEY_PW + "TEXT,"+ ")")
 
 
-        db.execSQL(createAccountTable)
+        db.execSQL(createUserTable)
 
 
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-        db.execSQL("DROP TABLE IF EXISTS $TABLE_ACCOUNT")
+        db.execSQL("DROP TABLE IF EXISTS $TABLE_USER")
         onCreate(db);
     }
 
-    fun addAccount(name: String, email:String, pw:String) {
+    fun addAccount(name: String, email: String, pw: String) {
         val db = this.writableDatabase
 
         val values = ContentValues()
         values.put(KEY_NAME, name)
         values.put(KEY_EMAIL, email)
         values.put(KEY_PW, pw)
-        db.insert(TABLE_ACCOUNT, null, values)
+        db.insert(TABLE_USER, null, values)
         db.close()
 
     }
@@ -41,8 +41,8 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
         var cuenta = usuarioDB()
         val db = this.writableDatabase
         val cursor = db.query(
-            TABLE_ACCOUNT, arrayOf(KEY_ID, KEY_NAME, KEY_EMAIL, KEY_PW),
-            "$KEY_ID=?", arrayOf(id.toString()),null,null,null,null
+            TABLE_USER, arrayOf(KEY_ID, KEY_NAME, KEY_EMAIL, KEY_PW),
+            "$KEY_ID=?", arrayOf(id.toString()), null, null, null, null
         )
 
         cursor?.moveToFirst()
@@ -58,7 +58,7 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
     fun getAllAccounts(): List<com.example.deber04.usuarioDB> {
         val accountList = ArrayList<com.example.deber04.usuarioDB>()
 
-        val sql_select = "SELECT * FROM $TABLE_ACCOUNT"
+        val sql_select = "SELECT * FROM $TABLE_USER"
 
         val db = this.writableDatabase
         val cursor = db.rawQuery(sql_select, null)
@@ -109,7 +109,7 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
         private val DATABASE_NAME = "contactsManager.db"
 
         //Nombre de la tabla de crear cuenta
-        private val TABLE_ACCOUNT = "cuentas"
+        private val TABLE_USER = "usuario"
 
         //Nombres de las columnas de la tabla
         private val KEY_ID = "id"
