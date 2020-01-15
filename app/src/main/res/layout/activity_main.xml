@@ -65,11 +65,13 @@
         app:srcCompat="@drawable/perpro" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="Usuario:"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="244dp" />
+        tools:layout_editor_absoluteY="250dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
