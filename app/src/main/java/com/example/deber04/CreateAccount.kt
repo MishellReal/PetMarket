@@ -15,8 +15,8 @@ class CreateAccount : AppCompatActivity() {
         setContentView(R.layout.activity_create_account)
 
 
-        val buttonRegistro : Button = findViewById(R.id.buttonRegistro)
-        buttonRegistro.setOnClickListener {
+        val buttonCrearCuenta : Button = findViewById(R.id.buttonCrearCuenta)
+        buttonCrearCuenta.setOnClickListener {
             val prIntent : Intent = Intent(this,Register::class.java)
             startActivity(prIntent)
 
