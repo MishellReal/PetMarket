@@ -12,21 +12,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val buttonlogin : Button = findViewById(R.id.buttonLogin)
+        val buttonlogin: Button = findViewById(R.id.buttonLogin)
         buttonlogin.setOnClickListener {
-            val prIntent : Intent = Intent(this,Login::class.java)
+            val prIntent: Intent = Intent(this, Login::class.java)
             startActivity(prIntent)
         }
 
-        val buttonCreateAcount : Button = findViewById(R.id.buttonCrearCuenta)
-        buttonCreateAcount.setOnClickListener {
-            val prIntent : Intent = Intent(this,CreateAccount::class.java)
+        val buttonCrearCuenta: Button = findViewById(R.id.buttonCrearCuenta)
+        buttonCrearCuenta.setOnClickListener {
+            val prIntent: Intent = Intent(this, CreateAccount::class.java)
             startActivity(prIntent)
-        }
 
+
+        }
 
     }
-
-
 
 }
