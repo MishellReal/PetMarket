@@ -13,7 +13,7 @@ class Register : AppCompatActivity() {
 
         val button : Button = findViewById(R.id.buttonAceptarRegistro)
         button.setOnClickListener {
-            var prIntent : Intent = Intent(this,Profile::class.java)
+            var prIntent : Intent = Intent(this,Services::class.java)
             startActivity(prIntent)
 
         }
