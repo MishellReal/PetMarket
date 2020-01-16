@@ -11,7 +11,7 @@
         android:id="@+id/textView3"
         android:layout_width="354dp"
         android:layout_height="31dp"
-        android:text="Si no tiene cuenta, registrese"
+        android:text="Si no tiene cuenta, registrate"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonCrearCuenta"
         app:layout_constraintEnd_toEndOf="parent"
