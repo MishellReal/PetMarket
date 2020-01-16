@@ -67,6 +67,7 @@ class CreateAccount : AppCompatActivity() {
                     .add(user)
                     .addOnSuccessListener { documentReference ->
                         Toast.makeText(this, "Usuario añadido con: ${documentReference.id}",Toast.LENGTH_LONG).show()
+
                         val prIntent: Intent = Intent(this, Register::class.java)
                         startActivity(prIntent)
 
