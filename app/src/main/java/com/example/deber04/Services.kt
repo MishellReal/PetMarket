@@ -11,14 +11,6 @@ class Services : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_services)
 
-
-        val buttonProfile : Button = findViewById(R.id.buttonProfile)
-        buttonProfile.setOnClickListener {
-            var prIntent : Intent = Intent(this,Register::class.java)
-            startActivity(prIntent)
-
-        }
-
         val buttontake : Button = findViewById(R.id.buttonPaseo)
         buttontake.setOnClickListener {
             var prIntent : Intent = Intent(this,Take_a_walk::class.java)
