@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Pedicure"></activity>
+        <activity android:name=".mapActivity"></activity>
+        <activity android:name=".Pedicure" />
         <activity android:name=".Loading" />
         <activity android:name=".Bathe" />
         <activity android:name=".Buy" />
@@ -31,11 +32,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".ConsultarID" />
-        <activity android:name=".ConsultarTodoActivity" />
-        <activity android:name=".EliminarActivity" />
-        <activity android:name=".ModificarActivity" />
-        <activity android:name=".IngresarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
