@@ -3,10 +3,13 @@ package com.example.deber04
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_create_account.*
 
 class CreateAccount : AppCompatActivity() {
 
@@ -49,8 +52,32 @@ class CreateAccount : AppCompatActivity() {
             }
 
             else {
-            val prIntent: Intent = Intent(this, Register::class.java)
-            startActivity(prIntent)
+
+                val db = FirebaseFirestore.getInstance()
+
+                val user = hashMapOf(
+                    "nombre" to editTextNombreReg.text,
+                    "apellido" to editTextApellidoReg.text,
+                    "correo" to editTextEmailReg.text,
+                    "telefono" to editTextEmailReg.text,
+                    "password" to editTextPwReg.text
+                )
+
+                db.collection("usuarios")
+                    .add(user)
+                    .addOnSuccessListener { documentReference ->
+                        Toast.makeText(this, "Usuario añadido con: ${documentReference.id}",Toast.LENGTH_LONG).show()
+                        val prIntent: Intent = Intent(this, Register::class.java)
+                        startActivity(prIntent)
+
+                    }
+
+                    .addOnFailureListener { e ->
+                        Toast.makeText(this, "Error añadiendo usuario: $e", Toast.LENGTH_LONG).show()
+                    }
+
+
+
         }
         }
 
