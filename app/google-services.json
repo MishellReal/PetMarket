@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "1018621909178",
-    "firebase_url": "https://petprosw.firebaseio.com",
-    "project_id": "petprosw",
-    "storage_bucket": "petprosw.appspot.com"
+    "project_number": "1026756581259",
+    "firebase_url": "https://petpro-2ffb9.firebaseio.com",
+    "project_id": "petpro-2ffb9",
+    "storage_bucket": "petpro-2ffb9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1018621909178:android:83d9a3ed6261370d7b8a83",
+        "mobilesdk_app_id": "1:1026756581259:android:751f347984173aae67818e",
         "android_client_info": {
           "package_name": "com.example.deber04"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1018621909178-ifqf4r0hs0di8crbggk0ojm8g6ar0var.apps.googleusercontent.com",
+          "client_id": "1026756581259-bpgfkass9crer5fpj3q4ekkvjsto9inj.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.deber04",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "1018621909178-3odpm3f8pfflg9ge2b3l09mphk8em90n.apps.googleusercontent.com",
+          "client_id": "1026756581259-2dsm35pgq7smu7g7d6m06ifeot7g1n4i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDBkw7xVLvM5NGODSu3SXUa2DzpfYIXSj8"
+          "current_key": "AIzaSyAsfH9vJReQ5MEeGXbehq2fBHx8KUWDcKc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1018621909178-3odpm3f8pfflg9ge2b3l09mphk8em90n.apps.googleusercontent.com",
+              "client_id": "1026756581259-2dsm35pgq7smu7g7d6m06ifeot7g1n4i.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -45,27 +45,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1018621909178:android:6ddb3d175ac8ae6e7b8a83",
+        "mobilesdk_app_id": "1:1026756581259:android:0524c5455fbd60b367818e",
         "android_client_info": {
-          "package_name": "com.petpro"
+          "package_name": "com.example.petpro"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1018621909178-3odpm3f8pfflg9ge2b3l09mphk8em90n.apps.googleusercontent.com",
+          "client_id": "1026756581259-gduv8ac0j5g69848ngm0p4rula9bms9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petpro",
+            "certificate_hash": "0a3373b06a76c30806fcbe17742a429837f4811f"
+          }
+        },
+        {
+          "client_id": "1026756581259-2dsm35pgq7smu7g7d6m06ifeot7g1n4i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDBkw7xVLvM5NGODSu3SXUa2DzpfYIXSj8"
+          "current_key": "AIzaSyAsfH9vJReQ5MEeGXbehq2fBHx8KUWDcKc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1018621909178-3odpm3f8pfflg9ge2b3l09mphk8em90n.apps.googleusercontent.com",
+              "client_id": "1026756581259-2dsm35pgq7smu7g7d6m06ifeot7g1n4i.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
