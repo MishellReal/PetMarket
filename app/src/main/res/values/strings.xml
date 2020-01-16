@@ -36,6 +36,7 @@
     <string name="Choose">Escoger</string>
     <string name="pay">Aceptar</string>
     <string name="servicios">Servicios</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

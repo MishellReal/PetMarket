@@ -51,7 +51,7 @@ class CreateAccount : AppCompatActivity() {
                 confPw.setError("Confirmar contraseña de usuario ")
             }
 
-            else {
+            /*else {
 
                 val db = FirebaseFirestore.getInstance()
 
@@ -68,22 +68,26 @@ class CreateAccount : AppCompatActivity() {
                     .addOnSuccessListener { documentReference ->
                         Toast.makeText(this, "Usuario añadido con: ${documentReference.id}",Toast.LENGTH_LONG).show()
 
-                        val prIntent: Intent = Intent(this, Register::class.java)
-                        startActivity(prIntent)
+
 
                     }
+
+
 
                     .addOnFailureListener { e ->
                         Toast.makeText(this, "Error añadiendo usuario: $e", Toast.LENGTH_LONG).show()
-                    }
-
+                    }*/
+                else{
+                    val prIntent: Intent = Intent(this, Register::class.java)
+                    startActivity(prIntent)
+                }
 
 
         }
         }
 
 
-    }}
+    }
     /*fun Ingresar(view: View){
         var db : DatabaseHandler= DatabaseHandler(this)
         var nombre : EditText = findViewById(R.id.editTextNombreRegistro)
