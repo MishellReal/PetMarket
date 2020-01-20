@@ -67,12 +67,7 @@ class CreateAccount : AppCompatActivity() {
                     .add(user)
                     .addOnSuccessListener { documentReference ->
                         Toast.makeText(this, "Usuario añadido con: ${documentReference.id}",Toast.LENGTH_LONG).show()
-
-
-
                     }
-
-
 
                     .addOnFailureListener { e ->
                         Toast.makeText(this, "Error añadiendo usuario: $e", Toast.LENGTH_LONG).show()
