@@ -35,7 +35,6 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".mapActivity" />
         <activity android:name=".Pedicure" />
         <activity android:name=".Loading" />
         <activity android:name=".Bathe" />
