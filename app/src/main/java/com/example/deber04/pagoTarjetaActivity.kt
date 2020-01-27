@@ -15,5 +15,6 @@ class pagoTarjetaActivity : AppCompatActivity() {
         button.setOnClickListener {
             var prIntent: Intent = Intent(this, Services::class.java)
             startActivity(prIntent)
+        }
     }
 }
