@@ -13,7 +13,7 @@ class Bathe : AppCompatActivity() {
 
         val button : Button = findViewById(R.id.buttonChoose)
         button.setOnClickListener {
-            var prIntent : Intent = Intent(this,Buy::class.java)
+            var prIntent : Intent = Intent(this,metodoPagoActivity::class.java)
             startActivity(prIntent)
 
         }

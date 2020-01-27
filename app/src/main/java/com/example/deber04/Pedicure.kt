@@ -13,7 +13,7 @@ class Pedicure : AppCompatActivity() {
 
         val button : Button = findViewById(R.id.buttonChoose3)
         button.setOnClickListener {
-            var prIntent : Intent = Intent(this,Buy::class.java)
+            var prIntent : Intent = Intent(this,metodoPagoActivity::class.java)
             startActivity(prIntent)
 
         }

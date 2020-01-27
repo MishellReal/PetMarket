@@ -13,7 +13,7 @@ class Loading : AppCompatActivity() {
 
         val button : Button = findViewById(R.id.buttonChoose2)
         button.setOnClickListener {
-            var prIntent : Intent = Intent(this,MapsActivity::class.java)
+            var prIntent : Intent = Intent(this,metodoPagoActivity::class.java)
             startActivity(prIntent)
 
         }
