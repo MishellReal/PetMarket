@@ -14,12 +14,12 @@ class metodoPagoActivity : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.buttonTarjeta)
         button.setOnClickListener {
-            var prIntent: Intent = Intent(this, metodoPagoActivity::class.java)
+            var prIntent: Intent = Intent(this, pagoTarjetaActivity::class.java)
             startActivity(prIntent)
 
             val button: Button = findViewById(R.id.buttonEfectivo)
             button.setOnClickListener {
-                var prIntent: Intent = Intent(this, metodoPagoActivity::class.java)
+                var prIntent: Intent = Intent(this, Services::class.java)
                 startActivity(prIntent)
 
             }
