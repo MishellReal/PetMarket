@@ -124,11 +124,6 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonPeluqueria"
         app:layout_constraintStart_toStartOf="@+id/buttonPeluqueria" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="104dp"
-        android:layout_height="121dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
