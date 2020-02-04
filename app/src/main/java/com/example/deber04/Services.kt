@@ -1,9 +1,9 @@
 package com.example.deber04
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.Button
 
 class Services : AppCompatActivity() {
@@ -17,6 +17,14 @@ class Services : AppCompatActivity() {
         val buttontake: Button = findViewById(R.id.buttonPaseo)
         buttontake.setOnClickListener {
             var prIntent: Intent = Intent(this, Take_a_walk::class.java)
+            startActivity(prIntent)
+
+        }
+
+
+        val button6: Button = findViewById(R.id.buttonPerfilMascota)
+        button6.setOnClickListener {
+            var prIntent: Intent = Intent(this, Profile::class.java)
             startActivity(prIntent)
 
         }
@@ -39,6 +47,8 @@ class Services : AppCompatActivity() {
             startActivity(prIntent)
 
         }
+
+
 
 
 

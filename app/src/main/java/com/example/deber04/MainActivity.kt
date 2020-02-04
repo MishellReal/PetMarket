@@ -29,7 +29,10 @@ class MainActivity : AppCompatActivity() {
                 pw.setError("Ingresar contraseña ")
             }
             else {
-                val prIntent: Intent = Intent(this, Services::class.java)
+                /*val prIntent: Intent = Intent(this, Services::class.java)
+                startActivity(prIntent)*/
+
+                val prIntent: Intent = Intent(this, menuSlideActivity::class.java)
                 startActivity(prIntent)
             }
 

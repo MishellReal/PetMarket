@@ -20,7 +20,7 @@ class metodoPagoActivity : AppCompatActivity() {
 
         val buttonEfectivo: Button = findViewById(R.id.buttonEfectivo)
             buttonEfectivo.setOnClickListener {
-                var prIntent: Intent = Intent(this, Services::class.java)
+                var prIntent: Intent = Intent(this, pagoEfectivoActivity::class.java)
                 startActivity(prIntent)
             }
     }

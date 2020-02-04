@@ -17,7 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pagoEfectivoActivity"></activity>
+        <activity
+            android:name=".menuSlideActivity"
+            android:label="@string/title_activity_menu_slide"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".pagoEfectivoActivity" />
         <activity android:name=".pagoTarjetaActivity" />
         <activity android:name=".metodoPagoActivity" />
         <!--

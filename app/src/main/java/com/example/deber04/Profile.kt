@@ -11,14 +11,9 @@ class Profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        val buttonUpdate : Button = findViewById(R.id.buttonUpdate)
-        buttonUpdate.setOnClickListener {
-            var prIntent : Intent = Intent(this,Register::class.java)
-            startActivity(prIntent)
 
-        }
 
-        val button : Button = findViewById(R.id.button6)
+        val button : Button = findViewById(R.id.buttonHome)
         button.setOnClickListener {
             var prIntent : Intent = Intent(this,Services::class.java)
             startActivity(prIntent)
