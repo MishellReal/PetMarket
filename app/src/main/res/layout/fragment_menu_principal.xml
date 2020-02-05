@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menuPrincipalFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewServicios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/servicios"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="48sp"
+            android:textStyle="italic"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonPaseo"
+            android:layout_width="176dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="64dp"
+            android:background="@mipmap/take"
+            android:hint="@string/ButtonTake"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewServicios" />
+
+        <Button
+            android:id="@+id/buttonBaño"
+            android:layout_width="176dp"
+            android:layout_height="160dp"
+            android:background="@mipmap/bathe1"
+            android:hint="@string/ButtonBathe"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonPaseo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonPaseo"
+            app:layout_constraintTop_toTopOf="@+id/buttonPaseo" />
+
+        <Button
+            android:id="@+id/buttonHospedaje"
+            android:layout_width="179dp"
+            android:layout_height="182dp"
+            android:layout_marginTop="104dp"
+            android:background="@mipmap/loading"
+            android:hint="@string/ButtonLoading"
+            app:layout_constraintEnd_toEndOf="@+id/buttonPaseo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonPaseo"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPaseo" />
+
+        <Button
+            android:id="@+id/buttonPeluqueria"
+            android:layout_width="161dp"
+            android:layout_height="176dp"
+            android:background="@mipmap/pedicure"
+            android:hint="@string/ButtonPedicure"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonHospedaje"
+            app:layout_constraintEnd_toEndOf="@+id/buttonBaño"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/buttonBaño"
+            app:layout_constraintTop_toTopOf="@+id/buttonHospedaje" />
+
+        <TextView
+            android:id="@+id/textViewPaseo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Paseos"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonPaseo"
+            app:layout_constraintEnd_toEndOf="@+id/buttonPaseo"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/buttonPaseo" />
+
+        <TextView
+            android:id="@+id/textViewBaño"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Baños"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBaño"
+            app:layout_constraintEnd_toEndOf="@+id/buttonBaño"
+            app:layout_constraintStart_toStartOf="@+id/buttonBaño" />
+
+        <TextView
+            android:id="@+id/textViewHospedaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Hospedaje"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonHospedaje"
+            app:layout_constraintEnd_toEndOf="@+id/buttonHospedaje"
+            app:layout_constraintStart_toStartOf="@+id/buttonHospedaje"
+            app:layout_constraintTop_toTopOf="@+id/textViewPeluqueria" />
+
+        <TextView
+            android:id="@+id/textViewPeluqueria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Peluquería"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonPeluqueria"
+            app:layout_constraintEnd_toEndOf="@+id/buttonPeluqueria"
+            app:layout_constraintStart_toStartOf="@+id/buttonPeluqueria" />
+
+        <Button
+            android:id="@+id/buttonPerfilMascota"
+            android:layout_width="51dp"
+            android:layout_height="81dp"
+            android:layout_marginBottom="16dp"
+            android:background="@mipmap/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</FrameLayout>
