@@ -19,6 +19,9 @@ class DatabaseHandler (context: Context) : SQLiteOpenHelper(context, DATABASE_NA
         db.execSQL(createAccountTable)
 
 
+
+
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
