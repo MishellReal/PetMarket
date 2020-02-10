@@ -4,149 +4,121 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_create_account.*
-import java.util.regex.Pattern
 
 class CreateAccount : AppCompatActivity() {
-
-    private lateinit var nombreUsuario: EditText
-    private lateinit var apellidoUsuario: EditText
-    private lateinit var emailUsuario: EditText
-    private lateinit var telefonoUsuario: EditText
-    private lateinit var passwordUsuario: EditText
-    private lateinit var confirmarPasswordUsuario: EditText
-    private lateinit var db: FirebaseFirestore
-    private lateinit var auth: FirebaseAuth
-    private lateinit var nombre: String
-    private lateinit var apellido: String
-    private lateinit var email: String
-    private lateinit var telefono: String
-    private lateinit var password: String
-    private lateinit var confirmacion: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
 
-        nombreUsuario = findViewById(R.id.editTextNombreReg)
-        apellidoUsuario = findViewById(R.id.editTextApellidoReg)
-        emailUsuario = findViewById(R.id.editTextEmailReg)
-        telefonoUsuario = findViewById(R.id.editTextPhoneReg)
-        passwordUsuario = findViewById(R.id.editTextPwReg)
-        confirmarPasswordUsuario = findViewById(R.id.editTextConfirmaPwReg)
+        val buttonAceptarRegistro: Button = findViewById(R.id.buttonAceptarRegistro)
+        buttonAceptarRegistro.setOnClickListener {
 
-        db = FirebaseFirestore.getInstance()
-        auth = FirebaseAuth.getInstance()
-    }
+            var nombre : EditText = findViewById(R.id.editTextNombreReg)
+            var apellido : EditText = findViewById(R.id.editTextApellidoReg)
+            var email : EditText = findViewById(R.id.editTextEmailReg)
+            var phone : EditText = findViewById(R.id.editTextPhoneReg)
+            var pw : EditText = findViewById(R.id.editTextPwReg)
+            var confPw : EditText = findViewById(R.id.editTextConfirmaPwReg)
 
-    fun onClickRegistrarUsuario(view: View) {
+            if (nombre.text.toString().isEmpty()){
+                nombre.setError("Ingresar nombre de usuario ")
+            }
 
-        nombre = nombreUsuario.text.toString()
-        apellido = apellidoUsuario.text.toString()
-        email = emailUsuario.text.toString()
-        telefono = telefonoUsuario.text.toString()
-        password = passwordUsuario.text.toString()
-        confirmacion = confirmarPasswordUsuario.text.toString()
+            if (apellido.text.toString().isEmpty()){
+                apellido.setError("Ingresar apellido de usuario ")
+            }
 
-        when {
-            nombre.isEmpty() -> {
-                nombreUsuario.error = "Campo obligatorio"
+            if (email.text.toString().isEmpty()){
+                email.setError("Ingresar correo electrónico de usuario ")
             }
-            apellido.isEmpty() -> {
-                apellidoUsuario.error = "Campo obligatorio"
+
+            if (phone.text.toString().isEmpty()){
+                phone.setError("Ingresar teléfono de usuario ")
             }
-            email.isEmpty() -> {
-                emailUsuario.error = "Campo obligatorio"
+
+            if (pw.text.toString().isEmpty()){
+                pw.setError("Ingresar contraseña de usuario ")
             }
-            !validarEmail(email) -> {
-                emailUsuario.error = "Correo electrónico no valido"
+
+            if (confPw.text.toString().isEmpty()){
+                confPw.setError("Confirmar contraseña de usuario ")
             }
-            telefono.isEmpty() -> {
-                telefonoUsuario.error = "Campo obligatorio"
-            }
-            telefono.length < 10 -> {
-                telefonoUsuario.error = "Número celular no valido"
-            }
-            password.isEmpty() -> {
-                passwordUsuario.error = "Campo obligatorio"
-            }
-            password.length < 8 -> {
-                passwordUsuario.error = "La contraseña debe tener al menos 8 caracteres"
-            }
-            confirmacion.isEmpty() -> {
-                confirmarPasswordUsuario.error = "Campo obligatorio"
-            }
-            !confirmacion.equals(password) -> {
-                confirmarPasswordUsuario.error = "La confirmacion no coincide con la contraseña"
-            }
-            else -> {
+
+            /*else {
+
+                val db = FirebaseFirestore.getInstance()
+
                 val user = hashMapOf(
-                    "nombre" to nombre,
-                    "apellido" to apellido,
-                    "email" to email,
-                    "telefono" to telefono,
-                    "password" to password
+                    "nombre" to editTextNombreReg.text,
+                    "apellido" to editTextApellidoReg.text,
+                    "correo" to editTextEmailReg.text,
+                    "telefono" to editTextEmailReg.text,
+                    "password" to editTextPwReg.text
                 )
 
-                createNewAccount(user)
-            }
+                db.collection("usuarios")
+                    .add(user)
+                    .addOnSuccessListener { documentReference ->
+                        Toast.makeText(this, "Usuario añadido con: ${documentReference.id}",Toast.LENGTH_LONG).show()
+                    }
+
+                    .addOnFailureListener { e ->
+                        Toast.makeText(this, "Error añadiendo usuario: $e", Toast.LENGTH_LONG).show()
+                    }*/
+                else{
+                    val prIntent: Intent = Intent(this, Register::class.java)
+                    startActivity(prIntent)
+                }
+
+
         }
+        }
+
+
     }
+    /*fun Ingresar(view: View){
+        var db : DatabaseHandler= DatabaseHandler(this)
+        var nombre : EditText = findViewById(R.id.editTextNombreRegistro)
+        var email : EditText = findViewById(R.id.editTextEmailRegistro)
+        var pw : EditText = findViewById(R.id.editTextEmailRegistro)
 
-    private fun validarEmail(email: String): Boolean {
-        val pattern: Pattern = Patterns.EMAIL_ADDRESS
-        return pattern.matcher(email).matches()
-    }
+        if(nombre.text.toString().isEmpty()){
 
-    private fun sendToFirestore(user: HashMap<String, String>) {
-        db.collection("usuarios")
-            .add(user as Map<String, Any>)
-            .addOnSuccessListener { documentReference ->
-                // Toast.makeText(this,"DocumentSnapshot added with ID: " + documentReference.id,Toast.LENGTH_LONG).show()
-                val intentVerificarCorreo = Intent(this, Register::class.java)
-                intentVerificarCorreo.putExtra("email", email)
-                startActivity(intentVerificarCorreo)
-                finish()
-            }
-            .addOnFailureListener { e ->
-                Toast.makeText(this, "Error durante registro", Toast.LENGTH_LONG).show()
-            }
-    }
+            nombre.setError("Ingresar nombre ")
+            return
+        }
 
-    private fun createNewAccount(usuario: HashMap<String, String>) {
-        auth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // Toast.makeText(this, "createUserWithEmail:success", Toast.LENGTH_LONG).show()
-                    val user: FirebaseUser? = auth.currentUser
-                    verifyAccountWithEmail(user)
-                    sendToFirestore(usuario)
-                } else {
-                    Toast.makeText(
-                        baseContext, "Authentication failed.",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-    }
+        if(email.text.toString().isEmpty()){
+            email.setError("Ingresar teléfono ")
+            return
+        }
 
-    private fun verifyAccountWithEmail(user: FirebaseUser?) {
-        user?.sendEmailVerification()
-            ?.addOnCompleteListener(this){task ->
-                if(task.isSuccessful){
-                    Toast.makeText(this,"Email enviado",Toast.LENGTH_LONG).show()
-                } else {
-                    Toast.makeText(this,"Error enviando el correo",Toast.LENGTH_LONG).show()
-                }
+       /* if(pw.text.toString().isEmpty()){
+            pw.setError("Ingresar contraseña")
+            return
+        }
 
+        else{
+
+            db.addAccount(nombre.text.toString(), email.text.toString(), pw.text.toString())
+            var toast = Toast.makeText(applicationContext,"Registro Creado ${nombre.text.toString()}",
+                Toast.LENGTH_LONG)
+            toast.show()
+            nombre.setText("")
+            nombre.setText("")
+
+        }*/
+
+
+
+<<<<<<< HEAD
             }
 
 
@@ -157,5 +129,29 @@ class CreateAccount : AppCompatActivity() {
 
 
 
+=======
+>>>>>>> parent of 04af542... enviar un correo de confirmacion para verificar cuenta
     }
+
+    /*
+    else{
+
+        db.addContact(nombre_contacto.text.toString(), numero_contacto.text.toString())
+        var toast = Toast.makeText(applicationContext,"Registro Creado ${nombre_contacto.text.toString()}",
+            Toast.LENGTH_LONG)
+        toast.show()
+        nombre_contacto.setText("")
+        numero_contacto.setText("")
+
     }
+
+}
+
+fun cancelar(view: View){
+
+    var regresar : Intent = Intent(this, MainActivity::class.java)
+    startActivity(regresar)
+
+}
+}*/
+}*/
