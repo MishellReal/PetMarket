@@ -4,110 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="354dp"
-        android:layout_height="31dp"
-        android:text="Si no tiene cuenta, registrate"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCrearCuenta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
-
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="155dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:hint="@string/Login"
-        android:text="Iniciar Sesión"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwLogin" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:text="Todos los derechos reservados"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonCrearCuenta"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:hint="@string/create_Account"
-        android:text="registro"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonLogin"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageViewLogo"
         android:layout_width="241dp"
         android:layout_height="157dp"
         android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUserLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/perpro" />
 
     <TextView
-        android:id="@+id/textViewUser"
+        android:id="@+id/textViewUserLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="52dp"
-        android:text="Usuario:"
+        android:text="@string/text_view_usuario"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPwLogin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
 
     <EditText
         android:id="@+id/editTextUserLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewUser"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewUserLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewUser"
-        app:layout_constraintTop_toTopOf="@+id/textViewUser" />
+        app:layout_constraintStart_toEndOf="@+id/textViewUserLogin"
+        app:layout_constraintTop_toTopOf="@+id/textViewUserLogin" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewPwLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="44dp"
-        android:text="Contraseña:"
+        android:text="@string/edit_text_contraseña"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUser" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserLogin" />
 
     <EditText
         android:id="@+id/editTextPwLogin"
@@ -117,9 +68,60 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPwLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6" />
+        app:layout_constraintStart_toEndOf="@+id/textViewPwLogin"
+        app:layout_constraintTop_toTopOf="@+id/textViewPwLogin" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="155dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="onClickLogin"
+        android:text="@string/button_inicio_sesion_login"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMensajeConf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPwLogin" />
+
+    <TextView
+        android:id="@+id/textViewMensajeConf"
+        android:layout_width="354dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_view_mensaje"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistroLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <Button
+        android:id="@+id/buttonRegistroLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:onClick="onClickButtonRegistro"
+        android:text="@string/button_registrar_login"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMensajeConf"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewMensajeConf"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMensajeConf" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

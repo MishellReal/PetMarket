@@ -14,7 +14,7 @@ class Register : AppCompatActivity() {
 
         val button : Button = findViewById(R.id.buttonAceptarRegistro)
         button.setOnClickListener {
-            var nombre : EditText = findViewById(R.id.editTextNameMascota)
+            var nombre : EditText = findViewById(R.id.editTextNombreMascota)
             var edad : EditText = findViewById(R.id.editTextEdadMascota)
             var desc : EditText = findViewById(R.id.editTextDescripcion)
 

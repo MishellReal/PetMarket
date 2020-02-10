@@ -11,11 +11,11 @@ class Bathe : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bathe)
 
-        val button : Button = findViewById(R.id.buttonChoose)
+        val button: Button = findViewById(R.id.buttonAceptarBaño)
         button.setOnClickListener {
-            var prIntent : Intent = Intent(this,metodoPagoActivity::class.java)
+            var prIntent: Intent = Intent(this, metodoPagoActivity::class.java)
             startActivity(prIntent)
-
         }
+
     }
 }

@@ -1,152 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    android:background="@color/colorPrimary"
+    tools:context=".Register"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewRegMascota"
-        android:layout_width="257dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="40dp"
-        android:text="Registrar Mascota"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNameMascota"
-        android:layout_width="0dp"
+    <Toolbar
+        android:id="@+id/toolbarRegistry"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:ems="10"
-        android:hint="@string/Name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonGato" />
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize">
 
-    <EditText
-        android:id="@+id/editTextEdadMascota"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Edad"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNameMascota"
-        app:layout_constraintStart_toStartOf="@+id/editTextNameMascota"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNameMascota" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonAceptarRegistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:background="@android:color/holo_blue_light"
-        android:hint="@string/BotonAceptar"
-        android:text="@string/BotonAceptar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registry_pet_tittle"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorText" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewEspecie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="44dp"
-        android:text="Especie:"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRegMascota" />
 
-    <RadioButton
-        android:id="@+id/radioButtonPerro"
-        android:layout_width="112dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:text="Perro"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewEspecie"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewEspecie"
-        app:layout_constraintTop_toTopOf="@+id/textViewEspecie" />
+    </Toolbar>
 
-    <RadioButton
-        android:id="@+id/radioButtonGato"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Gato"
-        app:layout_constraintEnd_toEndOf="@+id/radioButtonPerro"
-        app:layout_constraintStart_toStartOf="@+id/radioButtonPerro"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonPerro" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textViewVacunaAlDia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Vacunas al día:"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/editTextEdadMascota"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEdadMascota" />
+        <TextView
+            android:id="@+id/textViewCampoObligatorio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/text_view_campos_obligatorios"
+            android:textColor="?attr/colorError"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBoxVacunaAlDia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginLeft="108dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewVacunaAlDia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewVacunaAlDia"
-        app:layout_constraintTop_toTopOf="@+id/textViewVacunaAlDia"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textViewEspecie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:text="@string/text_view_especie"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewDesc"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Descripción:"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewVacunaAlDia"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewVacunaAlDia"
-        app:layout_constraintTop_toBottomOf="@+id/textViewVacunaAlDia" />
+        <RadioButton
+            android:id="@+id/radioButtonPerro"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/radio_button_perro"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewEspecie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewEspecie"
+            app:layout_constraintTop_toTopOf="@+id/textViewEspecie" />
 
-    <EditText
-        android:id="@+id/editTextDescripcion"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewDesc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textViewDesc"
-        app:layout_constraintTop_toTopOf="@+id/textViewDesc"
-        app:layout_constraintVertical_bias="0.476" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RadioButton
+            android:id="@+id/radioButtonGato"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_button_gato"
+            app:layout_constraintEnd_toEndOf="@+id/radioButtonPerro"
+            app:layout_constraintStart_toStartOf="@+id/radioButtonPerro"
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonPerro" />
+
+        <EditText
+            android:id="@+id/editTextNombreMascota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:hint="@string/edit_text_nombre_mascota"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButtonGato" />
+
+        <EditText
+            android:id="@+id/editTextEdadMascota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/edit_text_edad_mascota"
+            android:inputType="number|textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNombreMascota"
+            app:layout_constraintStart_toStartOf="@+id/editTextNombreMascota"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNombreMascota" />
+
+        <TextView
+            android:id="@+id/textViewVacunaAlDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_view_vacuna"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/editTextEdadMascota"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEdadMascota" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVacunaAlDia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/check_box_vacuna"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewVacunaAlDia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewVacunaAlDia"
+            app:layout_constraintTop_toTopOf="@+id/textViewVacunaAlDia"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/text_view_descripcion"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVacunaAlDia" />
+
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:phoneNumber="false"
+            android:text="@string/edit_text_descripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion" />
+
+        <Button
+            android:id="@+id/buttonAceptarRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/button_continuar_registro_mascota"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
